@@ -16,7 +16,6 @@ import (
 
 func GetAlerts(c *fiber.Ctx) error {
 	limitStr := c.Query("limit", "10")
-
 	limit, err := strconv.Atoi(limitStr)
 	if err != nil {
 		return c.Status(400).JSON(fiber.Map{"status": "error", "message": "Invalid limit value", "data": nil})
