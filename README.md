@@ -24,6 +24,20 @@ Given the mission of Saudi CERT in enhancing cybersecurity awareness within the 
 2. **Repository**:
    Clone the repository (if it's on a Git repository) or navigate to the directory where your `Dockerfile` and `docker-compose.yml` files reside.
 
+## Accessing Swagger Documentation:
+
+After the application is up and running via Docker Compose, you can access the Swagger UI documentation by navigating to:
+
+```bash
+http://localhost:YOUR_PORT/swagger/
+```
+
+Replace YOUR_PORT with the port number on which your application is running in the Docker container. If you've mapped the container's port to a different port on your host machine in the docker-compose.yml, use that port number.
+
+
+<div style="text-align:center;">
+    <img src="./assets/swaggerUI.png" alt="Swagger UI" />
+</div>
 
 ### Deployment Steps:
 
