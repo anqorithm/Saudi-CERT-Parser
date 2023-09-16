@@ -1,6 +1,8 @@
 # Saudi CERT Alert Parser & Public API
 
-![Saudi CERT Logo](./assets/CERT-logo-white..svg)
+<div style="text-align:center;">
+    <img src="./assets/CERT-logo-white.svg" alt="Saudi CERT Logo" width="400" />
+</div>
 
 Given the mission of Saudi CERT in enhancing cybersecurity awareness within the Kingdom of Saudi Arabia, this project aims to develop a parser to extract and structure alerts from Saudi CERT and expose them through a public API.
 
