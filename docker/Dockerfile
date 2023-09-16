@@ -10,6 +10,6 @@ COPY . .
 
 RUN CGO_ENABLED=0 GOOS=linux go build -o /suadi_cert
 
-EXPOSE 50051
+EXPOSE 80
 
 CMD ["/suadi_cert"]

@@ -1,6 +1,24 @@
 [
   {
     "id": 1,
+    "severity_level": "Critical",
+    "name": "Aruba Alert",
+    "image_url": "https://cert.gov.sa/media/Aruba-Networks_EYC32q7.png",
+    "original_link": "https://cert.gov.sa/en/security-warnings/aruba-alert-2023-03-15/",
+    "details": {
+      "affected_products": "ClearPass Policy Manager6.11.1 and below6.10.8 and below6.9.13 and belowEnd of life Versions",
+      "best_practice": "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-003.txt",
+      "description": "Aruba has released security updates to address several vulnerabilities in the following products:",
+      "recommendation_links": "",
+      "targeted_sector": "All",
+      "threat_list": "Arbitrary User Creation#Privilege Escalation#Sensitive Information Disclosure",
+      "threats": "Attacker could exploit these vulnerabilities and achieve the following:",
+      "warning_date": "15 March, 2023",
+      "warning_number": "2023-5503"
+    }
+  },
+  {
+    "id": 2,
     "severity_level": "High",
     "name": "Zoom Alert",
     "image_url": "https://cert.gov.sa/media/non_uhbrFVt.jpg",
@@ -18,7 +36,7 @@
     }
   },
   {
-    "id": 2,
+    "id": 3,
     "severity_level": "High",
     "name": "Mozilla Alert",
     "image_url": "https://cert.gov.sa/media/Mozilla__YT2gyVV.png",
@@ -36,7 +54,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 4,
     "severity_level": "Critical",
     "name": "Siemens  Alert",
     "image_url": "https://cert.gov.sa/media/Siemens_1REf4bf.png",
@@ -54,7 +72,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 5,
     "severity_level": "Critical",
     "name": "Schneider Electric Al…",
     "image_url": "https://cert.gov.sa/media/Schneider_Electric_TmUUSQF.jpg",
@@ -72,7 +90,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 6,
     "severity_level": "High",
     "name": "Apple Alert",
     "image_url": "https://cert.gov.sa/media/Apple_ZbW4sDU.png",
@@ -87,24 +105,6 @@
       "threats": "An app may be able to gain elevated privileges during the installation of GarageBandAn app may be able to leak sensitive user informationAn Attacker could exploit these vulnerabilities by doing the following:Elevate user privilegesDisclose sensitive user information",
       "warning_date": "9 March, 2023",
       "warning_number": "2023-5498"
-    }
-  },
-  {
-    "id": 6,
-    "severity_level": "High",
-    "name": "Proofpoint Alert",
-    "image_url": "https://cert.gov.sa/media/non_j4wsz0r.jpg",
-    "original_link": "https://cert.gov.sa/en/security-warnings/proofpoint-alert-2023-03-09/",
-    "details": {
-      "affected_products": "Proofpoint Enterprise Protectionall versions 8.20.0 and below",
-      "best_practice": "https://www.proofpoint.com/us/security/security-advisories/pfpt-sa-2023-0001",
-      "description": "Proofpoint has released security updates to address several vulnerabilities in the following product:",
-      "recommendation_links": "https://www.proofpoint.com/us/security/security-advisories/pfpt-sa-2023-0001",
-      "targeted_sector": "All",
-      "threat_list": "",
-      "threats": "Remote attacker could exploit these vulnerabilities by executing arbitrary code.",
-      "warning_date": "9 March, 2023",
-      "warning_number": "2023-5497"
     }
   },
   {
