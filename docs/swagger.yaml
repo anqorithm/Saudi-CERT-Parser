@@ -1,4 +1,62 @@
 basePath: /
+definitions:
+  models.AffectedProduct:
+    properties:
+      name:
+        type: string
+    type: object
+  models.Alert:
+    properties:
+      details:
+        $ref: '#/definitions/models.Details'
+      id:
+        type: string
+      image_url:
+        type: string
+      name:
+        type: string
+      original_link:
+        type: string
+      severity_level:
+        type: string
+    type: object
+  models.Details:
+    properties:
+      affected_products:
+        items:
+          $ref: '#/definitions/models.AffectedProduct'
+        type: array
+      best_practice:
+        type: string
+      description:
+        type: string
+      recommendation_links:
+        items:
+          $ref: '#/definitions/models.Recommendation'
+        type: array
+      targeted_sector:
+        type: string
+      threat_list:
+        items:
+          $ref: '#/definitions/models.Threat'
+        type: array
+      threats:
+        type: string
+      warning_date:
+        type: string
+      warning_number:
+        type: string
+    type: object
+  models.Recommendation:
+    properties:
+      link:
+        type: string
+    type: object
+  models.Threat:
+    properties:
+      name:
+        type: string
+    type: object
 host: localhost:8000
 info:
   contact:
@@ -29,6 +87,75 @@ paths:
       summary: Show the status of server.
       tags:
       - Health Check
+  /api/v1/alerts:
+    get:
+      consumes:
+      - application/json
+      description: Fetches alerts with optional limit
+      parameters:
+      - default: 10
+        description: Limit for the number of alerts returned, defaults to 10
+        in: query
+        name: limit
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Successfully retrieved alerts
+          schema:
+            items:
+              $ref: '#/definitions/models.Alert'
+            type: array
+        "400":
+          description: Invalid limit value
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Error fetching or decoding the alerts
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Get a list of alerts
+      tags:
+      - Alerts
+  /api/v1/alerts/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Fetches an alert based on the provided ID
+      parameters:
+      - description: ID of the alert to fetch
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Successfully retrieved the alert
+          schema:
+            $ref: '#/definitions/models.Alert'
+        "400":
+          description: Invalid ID format or ID is required
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Alert not found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Error fetching the alert
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Get a specific alert by ID
+      tags:
+      - Alerts
 schemes:
 - http
 swagger: "2.0"

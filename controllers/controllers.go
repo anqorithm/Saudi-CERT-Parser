@@ -14,6 +14,17 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
+// GetAlerts godoc
+// @Summary Get a list of alerts
+// @Description Fetches alerts with optional limit
+// @Tags Alerts
+// @Accept json
+// @Produce json
+// @Param limit query int false "Limit for the number of alerts returned, defaults to 10" default(10)
+// @Success 200 {array} models.Alert "Successfully retrieved alerts"
+// @Failure 400 {object} map[string]interface{} "Invalid limit value"
+// @Failure 500 {object} map[string]interface{} "Error fetching or decoding the alerts"
+// @Router /api/v1/alerts [get]
 func GetAlerts(c *fiber.Ctx) error {
 	limitStr := c.Query("limit", "10")
 	limit, err := strconv.Atoi(limitStr)
@@ -36,6 +47,18 @@ func GetAlerts(c *fiber.Ctx) error {
 	return c.Status(200).JSON(fiber.Map{"status": "success", "message": "Alerts fetched successfully", "data": alerts})
 }
 
+// GetAlertByID godoc
+// @Summary Get a specific alert by ID
+// @Description Fetches an alert based on the provided ID
+// @Tags Alerts
+// @Accept json
+// @Produce json
+// @Param id path string true "ID of the alert to fetch"
+// @Success 200 {object} models.Alert "Successfully retrieved the alert"
+// @Failure 400 {object} map[string]interface{} "Invalid ID format or ID is required"
+// @Failure 404 {object} map[string]interface{} "Alert not found"
+// @Failure 500 {object} map[string]interface{} "Error fetching the alert"
+// @Router /api/v1/alerts/{id} [get]
 func GetAlertByID(c *fiber.Ctx) error {
 	alertID := c.Params("id")
 	if alertID == "" {

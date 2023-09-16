@@ -47,6 +47,198 @@ const docTemplate = `{
                     }
                 }
             }
+        },
+        "/api/v1/alerts": {
+            "get": {
+                "description": "Fetches alerts with optional limit",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Alerts"
+                ],
+                "summary": "Get a list of alerts",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "default": 10,
+                        "description": "Limit for the number of alerts returned, defaults to 10",
+                        "name": "limit",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved alerts",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.Alert"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid limit value",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": true
+                        }
+                    },
+                    "500": {
+                        "description": "Error fetching or decoding the alerts",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": true
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/alerts/{id}": {
+            "get": {
+                "description": "Fetches an alert based on the provided ID",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Alerts"
+                ],
+                "summary": "Get a specific alert by ID",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "ID of the alert to fetch",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved the alert",
+                        "schema": {
+                            "$ref": "#/definitions/models.Alert"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid ID format or ID is required",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": true
+                        }
+                    },
+                    "404": {
+                        "description": "Alert not found",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": true
+                        }
+                    },
+                    "500": {
+                        "description": "Error fetching the alert",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "models.AffectedProduct": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.Alert": {
+            "type": "object",
+            "properties": {
+                "details": {
+                    "$ref": "#/definitions/models.Details"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "image_url": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "original_link": {
+                    "type": "string"
+                },
+                "severity_level": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.Details": {
+            "type": "object",
+            "properties": {
+                "affected_products": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.AffectedProduct"
+                    }
+                },
+                "best_practice": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "recommendation_links": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.Recommendation"
+                    }
+                },
+                "targeted_sector": {
+                    "type": "string"
+                },
+                "threat_list": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/models.Threat"
+                    }
+                },
+                "threats": {
+                    "type": "string"
+                },
+                "warning_date": {
+                    "type": "string"
+                },
+                "warning_number": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.Recommendation": {
+            "type": "object",
+            "properties": {
+                "link": {
+                    "type": "string"
+                }
+            }
+        },
+        "models.Threat": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                }
+            }
         }
     }
 }`
