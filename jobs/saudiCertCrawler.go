@@ -166,7 +166,12 @@ func processLinkFurther(link string) {
 		})
 		e.ForEach("strong", func(index int, el *colly.HTMLElement) {
 			if el.Text == "Description:" {
-				description = el.DOM.Next().Children().First().Text()
+				descriptionNode := el.DOM.Next().Children().First()
+				description = strings.TrimSpace(descriptionNode.Text())
+				if description == "" {
+					descriptionNode = descriptionNode.Next()
+					description = strings.TrimSpace(descriptionNode.Text())
+				}
 				el.DOM.Next().Children().Last().Each(func(i int, s *goquery.Selection) {
 					s.Children().Each(func(i int, s *goquery.Selection) {
 						affectedProduct := strings.TrimSpace(s.Text())
@@ -176,6 +181,9 @@ func processLinkFurther(link string) {
 			}
 			if el.Text == "Threats:" {
 				threats = el.DOM.Next().Children().First().Text()
+				if threats == "" {
+					threats = el.DOM.Next().Children().Next().Text()
+				}
 				if el.DOM.Next().Children().Length() == 2 {
 					el.DOM.Next().Children().Last().Each(func(i int, s *goquery.Selection) {
 						s.Children().Each(func(i int, s *goquery.Selection) {
@@ -194,11 +202,25 @@ func processLinkFurther(link string) {
 			}
 			if el.Text == "Best practice and Recommendations:" {
 				bestPractice = el.DOM.Next().Children().First().Text()
+				if bestPractice != "" {
+					bestPractice = el.DOM.Next().Children().Next().Text()
+				}
 				el.DOM.Next().Children().Last().Each(func(i int, s *goquery.Selection) {
-					s.Children().Each(func(i int, s *goquery.Selection) {
-						link := strings.TrimSpace(s.Text())
-						recommendationLinks = append(recommendationLinks, link)
-					})
+					if s.Is("ul") {
+						el.DOM.Next().Children().Last().Each(func(i int, s *goquery.Selection) {
+							s.Children().Each(func(i int, s *goquery.Selection) {
+								link := strings.TrimSpace(s.Text())
+								recommendationLinks = append(recommendationLinks, link)
+							})
+						})
+					} else if s.Is("p") {
+						el.DOM.Next().Children().Each(func(i int, s *goquery.Selection) {
+							s.Children().Each(func(i int, s *goquery.Selection) {
+								link := strings.TrimSpace(s.Text())
+								recommendationLinks = append(recommendationLinks, link)
+							})
+						})
+					}
 				})
 			}
 		})

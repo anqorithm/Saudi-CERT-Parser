@@ -11,7 +11,7 @@ import (
 
 func main() {
 	db.ConnectToMongoDB()
-	jobs.RunSaudiCertCrawler(1, 50)
+	jobs.RunSaudiCertCrawler(50, 55)
 	jobs.SaudiCertInserter()
 	app := fiber.New()
 	routes.SetupRoutes(app)
