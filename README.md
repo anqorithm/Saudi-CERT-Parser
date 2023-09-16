@@ -12,6 +12,70 @@ Given the mission of Saudi CERT in enhancing cybersecurity awareness within the 
 * Store parsed data in a MongoDB database.
 * Public API for accessing Saudi CERT security warnings.
 
+
+## Running the Application Using Docker-Compose
+
+
+1. **Docker and docker-compose**:
+   Ensure you have Docker and docker-compose installed on your system.
+   - [Get Docker](https://docs.docker.com/get-docker/)
+   - [Install Docker Compose](https://docs.docker.com/compose/install/)
+
+2. **Repository**:
+   Clone the repository (if it's on a Git repository) or navigate to the directory where your `Dockerfile` and `docker-compose.yml` files reside.
+
+
+### Deployment Steps:
+
+```yaml
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - 8000:8000
+    networks:
+      - saudi_cert_network
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: saudi_cert_user
+      MONGO_INITDB_ROOT_PASSWORD: saudi_cert_password
+    volumes:
+      - mongodb_data_volume:/data/db
+    networks:
+      - saudi_cert_network
+  mongo-express:
+    image: mongo-express:latest
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: saudi_cert_user
+      ME_CONFIG_MONGODB_ADMINPASSWORD: saudi_cert_password
+      ME_CONFIG_MONGODB_URL: mongodb://saudi_cert_user:saudi_cert_password@mongodb:27017/
+    depends_on:
+      - mongodb
+    networks:
+      - saudi_cert_network
+volumes:
+  mongodb_data_volume:
+networks:
+  saudi_cert_network:
+```
+
+Navigate to the directory containing your docker-compose.yml file in a terminal. Then run:
+
+```bash
+$ docker-compose up --build
+```
+
 ## 1. Project Structure
 
 #### 1.1 Parser
