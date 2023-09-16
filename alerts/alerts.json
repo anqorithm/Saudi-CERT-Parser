@@ -2,6 +2,24 @@
   {
     "id": 1,
     "severity_level": "High",
+    "name": "Redhat Alert",
+    "image_url": "https://cert.gov.sa/media/Red_Hat_onNxVgh.png",
+    "original_link": "https://cert.gov.sa/en/security-warnings/redhat-alert-2023-09-15/",
+    "details": {
+      "affected_products": "RedHat Build of Quarkus Text-Only Advisories x86_64",
+      "best_practice": "The CERT team encourages users to review RedHat security advisory and update the affected product:",
+      "description": "Redhat has released security updates to address a vulnerability in the following product:",
+      "recommendation_links": "https://access.redhat.com/errata/RHSA-2023:5170",
+      "targeted_sector": "All",
+      "threat_list": "",
+      "threats": "An attacker could exploit the vulnerability by doing the following:",
+      "warning_date": "15 September, 2023",
+      "warning_number": "2023-5798"
+    }
+  },
+  {
+    "id": 2,
+    "severity_level": "High",
     "name": "Proofpoint Alert",
     "image_url": "https://cert.gov.sa/media/non_IWVgDvm.jpg",
     "original_link": "https://cert.gov.sa/en/security-warnings/proofpoint-alert913/",
@@ -18,7 +36,7 @@
     }
   },
   {
-    "id": 2,
+    "id": 3,
     "severity_level": "High",
     "name": "Fortinet Alert",
     "image_url": "https://cert.gov.sa/media/fortinet_wB7dWwB.png",
@@ -36,7 +54,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 4,
     "severity_level": "High",
     "name": "Palo Alto Alert",
     "image_url": "https://cert.gov.sa/media/palo-alto_kxNWA0D.png",
@@ -54,7 +72,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 5,
     "severity_level": "High",
     "name": "Lenovo Alert",
     "image_url": "https://cert.gov.sa/media/Lenovo_kZRyoAe.png",
@@ -72,7 +90,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 6,
     "severity_level": "Critical",
     "name": "Mozilla Alert",
     "image_url": "https://cert.gov.sa/media/Mozilla__NQkJTrL.png",
@@ -87,24 +105,6 @@
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "13 September, 2023",
       "warning_number": "2023-5793"
-    }
-  },
-  {
-    "id": 6,
-    "severity_level": "Critical",
-    "name": "Google Chrome Alert",
-    "image_url": "https://cert.gov.sa/media/Chrome_WwyuzUH.png",
-    "original_link": "https://cert.gov.sa/en/security-warnings/google-chrome-alert913/",
-    "details": {
-      "affected_products": "",
-      "best_practice": "The CERT team encourages users to update the browser 117.0.5938.62 for Mac and Linux, 117.0.5938.62/.63 for Windows, and Chrome 117 (117.0.5938.60) for Android, for more details, please follow the below links:",
-      "description": "Google has released a security updates to address several vulnerabilities in Chrome browser for Windows, Mac and Linux.",
-      "recommendation_links": "https://chromereleases.googleblog.com/2023/09/stable-channel-update-for-desktop_12.html#https://chromereleases.googleblog.com/2023/09/chrome-for-android-update_01794690103.html",
-      "targeted_sector": "All",
-      "threat_list": "Heap buffer overflow",
-      "threats": "Attacker could exploit these vulnerabilities by doing the following:",
-      "warning_date": "13 September, 2023",
-      "warning_number": "2023-5792"
     }
   },
   {
@@ -317,7 +317,7 @@
       "description": "NetApp has released security updates to address multiple vulnerabilities in the following product:",
       "recommendation_links": "https://security.netapp.com/advisory/ntap-20230908-0007/",
       "targeted_sector": "All",
-      "threat_list": "Denial of Service#Privilege Escalation",
+      "threat_list": "",
       "threats": "The attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "9 September, 2023",
       "warning_number": "2023-5781"
@@ -371,7 +371,7 @@
       "description": "",
       "recommendation_links": "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-014.txt",
       "targeted_sector": "All",
-      "threat_list": "Denial of Service",
+      "threat_list": "",
       "threats": "The attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "6 September, 2023",
       "warning_number": "2023-5778"
@@ -551,7 +551,7 @@
       "description": "Ivanti has released security update to address several vulnerabilities in the following product:",
       "recommendation_links": "#https://forums.ivanti.com/s/article/Security-Advisory-Avalanche-CVE-2023-38036?language=en_US",
       "targeted_sector": "All",
-      "threat_list": "#",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:• Remote Code Execution",
       "warning_date": "31 August, 2023",
       "warning_number": "2023-5768"
@@ -569,7 +569,7 @@
       "description": "Redhat has released security updates to address multiple vulnerabilities in the following products: * Red Hat OpenShift Container Platform 4.12 for RHEL 8 x86_64 * Red Hat OpenShift Container Platform 4.11 for RHEL 8 x86_64 * Red Hat OpenShift Container Platform for Power 4.10 for RHEL 8 ppc64le * Red Hat OpenShift Container Platform for Power 4.9 for RHEL 8 ppc64le * Red Hat OpenShift Container Platform for IBM Z and LinuxONE 4.10 for RHEL 8 s390x * Red Hat OpenShift Container Platform for IBM Z and LinuxONE 4.9 for RHEL 8 s390x * Red Hat Single Sign-On Text-Only Advisories x86_64",
       "recommendation_links": "#https://access.redhat.com/errata/RHSA-2023:4921##https://access.redhat.com/errata/RHSA-2023:4924",
       "targeted_sector": "All",
-      "threat_list": "###",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following: • Denial of Service • Uncontrolled Recursion in JSONArray",
       "warning_date": "31 August, 2023",
       "warning_number": "2023-5767"
@@ -749,7 +749,7 @@
       "description": "",
       "recommendation_links": "https://access.redhat.com/errata/RHSA-2023:4801#https://access.redhat.com/errata/RHSA-2023:4835",
       "targeted_sector": "All",
-      "threat_list": "Information Disclosure#Elevate Privileges",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "29 August, 2023",
       "warning_number": "2023-5757"
@@ -875,7 +875,7 @@
       "description": "TP-Link has released a security update to address a vulnerability in the following product:",
       "recommendation_links": "https://www.tp-link.com/us/support/faq/3722/",
       "targeted_sector": "All",
-      "threat_list": "Sensitive Information Disclosure",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "24 August, 2023",
       "warning_number": "2023-5750"
@@ -1145,7 +1145,7 @@
       "description": "Synology has released security updates to address multiple vulnerabilities in the following product:",
       "recommendation_links": "https://www.synology.com/en-us/security/advisory/Synology_SA_23_11",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "17 August, 2023",
       "warning_number": "2023-5735"
@@ -1883,7 +1883,7 @@
       "description": "",
       "recommendation_links": "https://www.synology.com/en-us/security/advisory/Synology_SA_23_10",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution#Sensitive Information Disclosure#Denial of Service",
+      "threat_list": "",
       "threats": "",
       "warning_date": "28 July, 2023",
       "warning_number": "2023-5693"
@@ -2153,7 +2153,7 @@
       "description": "Oracle has released security updates to address several vulnerabilities in serval products.",
       "recommendation_links": "https://www.oracle.com/security-alerts/cpujul2023.html",
       "targeted_sector": "All",
-      "threat_list": "Sensitive information disclosure#Denial of Service (DoS)#Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "19 July, 2023",
       "warning_number": "2023-5678"
@@ -2171,7 +2171,7 @@
       "description": "Citrix has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://support.citrix.com/article/CTX561482/citrix-adc-and-citrix-gateway-security-bulletin-for-cve20233519-cve20233466-cve20233467",
       "targeted_sector": "All",
-      "threat_list": "Unauthenticated Remote Code Execution#Privilege Escalation#Cross Site-Scripting (XSS)",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "18 July, 2023",
       "warning_number": "2023-5677"
@@ -2207,7 +2207,7 @@
       "description": "Adobe has released security updates to address a vulnerability in the following products:",
       "recommendation_links": "https://helpx.adobe.com/security/products/coldfusion/apsb23-41.html",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "Attacker could exploit this vulnerability by doing the following:",
       "warning_date": "15 July, 2023",
       "warning_number": "2023-5675"
@@ -2279,7 +2279,7 @@
       "description": "Juniper has released security alerts to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://supportportal.juniper.net/s/article/2023-07-Security-Bulletin-Junos-OS-QFX10000-Series-All-traffic-will-be-dropped-after-a-specific-valid-IP-packet-has-been-received-which-needs-to-be-routed-over-a-VXLAN-tunnel-CVE-2023-36835?language=en_US#https://supportportal.juniper.net/s/article/2023-07-Security-Bulletin-Junos-OS-MX-Series-PFE-crash-upon-receipt-of-specific-packet-destined-to-an-AMS-interface-CVE-2023-36832?language=en_US#https://supportportal.juniper.net/s/article/2023-07-Security-Bulletin-Junos-OS-SRX-Series-jbuf-memory-leak-when-SSL-Proxy-and-UTM-Web-Filtering-is-applied-CVE-2023-36831?language=en_US#https://supportportal.juniper.net/s/article/2023-07-Security-Bulletin-SRX-Series-and-MX-Series-An-FPC-core-is-observed-when-IDP-is-enabled-on-the-device-and-a-specific-malformed-SSL-packet-is-received-CVE-2023-28985?language=en_US",
       "targeted_sector": "All",
-      "threat_list": "Denial of Service (DoS)",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "12 July, 2023",
       "warning_number": "2023-5671"
@@ -2297,7 +2297,7 @@
       "description": "Jenkins has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://www.jenkins.io/security/advisory/2023-07-12/",
       "targeted_sector": "All",
-      "threat_list": "CSRF Protection Bypass#XML External Entity (XXE) attacks#Session Fixation",
+      "threat_list": "",
       "threats": "Attackers could exploit these vulnerabilities by doing the following:",
       "warning_date": "12 July, 2023",
       "warning_number": "2023-5670"
@@ -2315,7 +2315,7 @@
       "description": "Cisco has released security update to address a vulnerability in the following product:",
       "recommendation_links": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vmanage-unauthapi-sphCLYPA",
       "targeted_sector": "All",
-      "threat_list": "Unauthorized Access",
+      "threat_list": "",
       "threats": "An attacker could exploit this vulnerability by doing the following:",
       "warning_date": "12 July, 2023",
       "warning_number": "2023-5669"
@@ -2369,7 +2369,7 @@
       "description": "Citrix has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://support.citrix.com/article/CTX561480/citrix-secure-access-client-for-windows-security-bulletin-for-cve202324491#https://support.citrix.com/article/CTX564169/citrix-secure-access-client-for-ubuntu-security-bulletin-for-cve202324492",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Privilege Escalation",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "11 July, 2023",
       "warning_number": "2023-5666"
@@ -2387,7 +2387,7 @@
       "description": "Mozilla has released security updates to address a vulnerability in the following products:",
       "recommendation_links": "https://support.mozilla.org/en-US/kb/update-firefox-latest-release",
       "targeted_sector": "All",
-      "threat_list": "Memory Corruption#Use-After-Free",
+      "threat_list": "",
       "threats": "An attacker could exploit this vulnerability by doing the following:",
       "warning_date": "11 July, 2023",
       "warning_number": "2023-5665"
@@ -2405,7 +2405,7 @@
       "description": "Microsoft has released security updates to address several vulnerabilities in the following products:",
       "recommendation_links": "https://msrc.microsoft.com/update-guide/releaseNote/2023-Jul",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Elevate Privileges#Security feature bypass#Denial-of-Service (DoS)",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "11 July, 2023",
       "warning_number": "2023-5664"
@@ -2423,7 +2423,7 @@
       "description": "Adobe has released security updates to address several vulnerabilities in the following products:",
       "recommendation_links": "https://helpx.adobe.com/security/products/indesign/apsb23-38.html#https://helpx.adobe.com/security/products/coldfusion/apsb23-40.html",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution#Security feature bypass#Memory Leak",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "11 July, 2023",
       "warning_number": "2023-5663"
@@ -2441,7 +2441,7 @@
       "description": "SAP has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://accounts.sap.com/saml2/idp/sso",
       "targeted_sector": "All",
-      "threat_list": "Command Injection#Path Traversal#HTTP Request Smuggling attack#Server-Side Request Forgery (SSRF)#Memory Corruption#Denial of Service (DoS)",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "11 July, 2023",
       "warning_number": "2023-5662"
@@ -2513,7 +2513,7 @@
       "description": "Aruba has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-008.txt",
       "targeted_sector": "All",
-      "threat_list": "Cross Site-Scripting (XSS)#Command Injection",
+      "threat_list": "",
       "threats": "The attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "8 July, 2023",
       "warning_number": "2023-5658"
@@ -2531,7 +2531,7 @@
       "description": "Dell EMC has released a security update to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://www.dell.com/support/kbdoc/en-us/000215608/dsa-2023-244-dell-technologies-networking-edge-gateway-security-update-for-multiple-smm-vulnerabilities",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "The attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "7 July, 2023",
       "warning_number": "2023-5657"
@@ -2639,7 +2639,7 @@
       "description": "Synology has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://www.synology.com/en-us/security/advisory/Synology_SA_23_09",
       "targeted_sector": "All",
-      "threat_list": "SQL Injection",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "30 June, 2023",
       "warning_number": "2023-5651"
@@ -2801,7 +2801,7 @@
       "description": "VMware has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://www.vmware.com/security/advisories/VMSA-2023-0014.html",
       "targeted_sector": "All",
-      "threat_list": "Heap-based Buffer Overflow#Use-After-Free#Out-Of-Bounds Memory Access",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "22 June, 2023",
       "warning_number": "2023-5642"
@@ -2819,7 +2819,7 @@
       "description": "Drupal has released security update to address a vulnerability in the following product:",
       "recommendation_links": "https://www.drupal.org/sa-contrib-2023-022",
       "targeted_sector": "All",
-      "threat_list": "Improper Access Control",
+      "threat_list": "",
       "threats": "The attacker could exploit the vulnerabilities by doing the following:",
       "warning_date": "22 June, 2023",
       "warning_number": "2023-5641"
@@ -2837,7 +2837,7 @@
       "description": "Juniper has released security alerts to address several vulnerabilities in the following product:",
       "recommendation_links": "https://supportportal.juniper.net/s/article/2023-06-Out-of-Cycle-Security-Bulletin-Junos-OS-and-Junos-OS-Evolved-A-BGP-session-will-flap-upon-receipt-of-a-specific-optional-transitive-attribute-CVE-2023-0026?language=en_US",
       "targeted_sector": "All",
-      "threat_list": "Improper Input Validation#Denial of Service (DoS)",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "22 June, 2023",
       "warning_number": "2023-5640"
@@ -2855,7 +2855,7 @@
       "description": "Google has released a security update to address several vulnerabilities in Long Term Support channel ChromeOS.",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/06/long-term-support-channel-update-for_21.html",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free#Type Confusion",
+      "threat_list": "",
       "threats": "The attacker could exploit the vulnerabilities by doing the following:",
       "warning_date": "22 June, 2023",
       "warning_number": "2023-5639"
@@ -2873,7 +2873,7 @@
       "description": "Apple has released security updates to address multiple vulnerabilities in their product Apple recommends updating the products to the following versions:",
       "recommendation_links": "https://support.apple.com/en-us/HT213814#https://support.apple.com/en-us/HT213811#https://support.apple.com/en-us/HT213813#https://support.apple.com/en-us/HT213810#https://support.apple.com/en-us/HT213809#https://support.apple.com/en-us/ HT213812#https://support.apple.com/en-us/HT213808",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution#Integer Overflow#Memory Corruption",
+      "threat_list": "",
       "threats": "An Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "21 June, 2023",
       "warning_number": "2023-5638"
@@ -2909,7 +2909,7 @@
       "description": "HP has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://support.hp.com/us-en/document/ish_8642715-8642746-16/hpsbhf03850",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "21 June, 2023",
       "warning_number": "2023-5636"
@@ -2963,7 +2963,7 @@
       "description": "",
       "recommendation_links": "https://www.foxit.com/support/security-bulletins.html",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free#Remote Code Execution",
+      "threat_list": "",
       "threats": "",
       "warning_date": "16 June, 2023",
       "warning_number": "2023-5633"
@@ -2981,7 +2981,7 @@
       "description": "",
       "recommendation_links": "https://www.drupal.org/sa-contrib-2023-020",
       "targeted_sector": "All",
-      "threat_list": "Cross Site-Scripting (XSS)",
+      "threat_list": "",
       "threats": "",
       "warning_date": "15 June, 2023",
       "warning_number": "2023-5632"
@@ -2999,7 +2999,7 @@
       "description": "",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/06/long-term-support-channel-update-for.html",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free#Type Confusion",
+      "threat_list": "",
       "threats": "",
       "warning_date": "15 June, 2023",
       "warning_number": "2023-5631"
@@ -3017,7 +3017,7 @@
       "description": "SAP has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html/",
       "targeted_sector": "All",
-      "threat_list": "Cross-Site Scripting (XSS)#Improper Access Control",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "14 June, 2023",
       "warning_number": "2023-5630"
@@ -3035,7 +3035,7 @@
       "description": "",
       "recommendation_links": "https://www.dell.com/support/kbdoc/en-us/000214943/dsa-2023-201-security-update-for-dell-powerprotect-cyber-recovery",
       "targeted_sector": "All",
-      "threat_list": "Authentication Bypass",
+      "threat_list": "",
       "threats": "",
       "warning_date": "14 June, 2023",
       "warning_number": "2023-5629"
@@ -3053,7 +3053,7 @@
       "description": "",
       "recommendation_links": "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability-in-some-hikvision-access-control-intercom/",
       "targeted_sector": "All",
-      "threat_list": "Improper Access Control",
+      "threat_list": "",
       "threats": "",
       "warning_date": "14 June, 2023",
       "warning_number": "2023-5628"
@@ -3071,7 +3071,7 @@
       "description": "Adobe has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://helpx.adobe.com/security/products/magento/apsb23-35.html#https://helpx.adobe.com/security/products/animate/apsb23-36.html#https://helpx.adobe.com/security/products/substance3d_designer/apsb23-39.html",
       "targeted_sector": "All",
-      "threat_list": "Cross-Site Scripting (XSS)#Security feature bypass#Use After Free",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "13 June, 2023",
       "warning_number": "2023-5627"
@@ -3089,7 +3089,7 @@
       "description": "Microsoft has released security updates to address several vulnerabilities in the following products:",
       "recommendation_links": "https://msrc.microsoft.com/update-guide/releaseNote/2023-Jun",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Elevate Privileges#Information Disclosure#Security feature bypass#Denial-of-Service (DoS)",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "13 June, 2023",
       "warning_number": "2023-5626"
@@ -3107,7 +3107,7 @@
       "description": "Google has released security updates to address several vulnerabilities in Chrome browser for Windows, Mac and Linux.",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/06/stable-channel-update-for-desktop_13.html",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free#Type Confusion",
+      "threat_list": "",
       "threats": "The attacker could exploit the vulnerabilities by doing the following:",
       "warning_date": "13 June, 2023",
       "warning_number": "2023-5625"
@@ -3125,7 +3125,7 @@
       "description": "Citrix has released security updates to address multiple vulnerabilities in the following product:",
       "recommendation_links": "https://support.citrix.com/article/CTX559517/sharefile-storagezones-controller-security-update-for-cve202324489",
       "targeted_sector": "All",
-      "threat_list": "Unauthorized Access",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "13 June, 2023",
       "warning_number": "2023-5624"
@@ -3143,7 +3143,7 @@
       "description": "",
       "recommendation_links": "https://support.hp.com/us-en/document/ish_8585737-8585769-16/hpsbpi03849",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Buffer Overflow",
+      "threat_list": "",
       "threats": "",
       "warning_date": "13 June, 2023",
       "warning_number": "2023-5623"
@@ -3161,7 +3161,7 @@
       "description": "",
       "recommendation_links": "https://www.fortiguard.com/psirt/FG-IR-23-076#https://www.fortiguard.com/psirt/FG-IR-22-332#https://www.fortiguard.com/psirt/FG-IR-23-097#https://www.fortiguard.com/psirt/FG-IR-23-119#https://www.fortiguard.com/psirt/FG-IR-22-258",
       "targeted_sector": "All",
-      "threat_list": "Command Injection#Unauthorized Access#Heap-based Buffer Overflow",
+      "threat_list": "",
       "threats": "",
       "warning_date": "13 June, 2023",
       "warning_number": "2023-5622"
@@ -3197,7 +3197,7 @@
       "description": "Google has released a security update to address several vulnerabilities in Stable channel ChromeOS.",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/06/the-stable-channel-is-being-updated-to.html",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free#Buffer Overflow#Code Execution",
+      "threat_list": "",
       "threats": "The attacker could exploit the vulnerabilities by doing the following:",
       "warning_date": "8 June, 2023",
       "warning_number": "2023-5620"
@@ -3215,7 +3215,7 @@
       "description": "PulseSecure has released security updates to address multiple vulnerabilities in the following product:",
       "recommendation_links": "https://forums.ivanti.com/s/article/SA-2023-06-06-CVE-2023-28324?language=en_US",
       "targeted_sector": "All",
-      "threat_list": "Privilege Escalation#Remote Code Execution",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "8 June, 2023",
       "warning_number": "2023-5619"
@@ -3233,7 +3233,7 @@
       "description": "Cisco has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-expressway-priv-esc-Ls2B9t7b#https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucm-imp-dos-49GL7rzT#https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-ssl-dos-uu7mV5p6#https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ac-csc-privesc-wx4U4Kw",
       "targeted_sector": "All",
-      "threat_list": "Privilege Escalation#Denial of Service (DoS)",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "7 June, 2023",
       "warning_number": "2023-5618"
@@ -3251,7 +3251,7 @@
       "description": "VMware has released security updates to address multiple vulnerabilities in the following product:",
       "recommendation_links": "https://www.vmware.com/security/advisories/VMSA-2023-0012.html",
       "targeted_sector": "All",
-      "threat_list": "Command Injection#Deserialization of Untrusted Data",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "7 June, 2023",
       "warning_number": "2023-5617"
@@ -3269,7 +3269,7 @@
       "description": "Mozilla has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "Update instructions (Firefox):https://support.mozilla.org/en-US/kb/update-firefox-latest-release",
       "targeted_sector": "All",
-      "threat_list": "Click-jacking#Memory Corruption",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "7 June, 2023",
       "warning_number": "2023-5616"
@@ -3287,7 +3287,7 @@
       "description": "Trend Micro has released security updates to address multiple vulnerabilities in the following product:",
       "recommendation_links": "https://success.trendmicro.com/dcx/s/solution/000293322?language=en_US",
       "targeted_sector": "All",
-      "threat_list": "Privilege Escalation",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "6 June, 2023",
       "warning_number": "2023-5615"
@@ -3305,7 +3305,7 @@
       "description": "",
       "recommendation_links": "https://access.redhat.com/errata/RHSA-2023:3465",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free#Privilege Escalation#Memory Leak#Memory Corruption",
+      "threat_list": "",
       "threats": "",
       "warning_date": "6 June, 2023",
       "warning_number": "2023-5614"
@@ -3323,7 +3323,7 @@
       "description": "DELL EMC has released a security update to address a vulnerability in the following product:",
       "recommendation_links": "https://www.dell.com/support/kbdoc/en-us/000211267/dsa-2023-060-dell-networker-security-update-for-an-nsrcapinfo-vulnerability",
       "targeted_sector": "All",
-      "threat_list": "Command Injection",
+      "threat_list": "",
       "threats": "The attacker could exploit the vulnerabilities by doing the following:",
       "warning_date": "6 June, 2023",
       "warning_number": "2023-5613"
@@ -3341,7 +3341,7 @@
       "description": "Samsung has released their monthly security update for Samsung devices.",
       "recommendation_links": "https://security.samsungmobile.com/securityUpdate.smsb",
       "targeted_sector": "All",
-      "threat_list": "Elevate User Privileges#Denial of Service (DoS)#Information Disclosure",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "6 June, 2023",
       "warning_number": "2023-5612"
@@ -3359,7 +3359,7 @@
       "description": "Google has released security updates to address several vulnerabilities in Chrome browser for Windows, Mac and Linux.",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/06/stable-channel-update-for-desktop.html",
       "targeted_sector": "All",
-      "threat_list": "Type Confusion",
+      "threat_list": "",
       "threats": "The attacker could exploit the vulnerabilities by doing the following:",
       "warning_date": "6 June, 2023",
       "warning_number": "2023-5611"
@@ -3377,7 +3377,7 @@
       "description": "Android has released their monthly security update to address multiple vulnerabilities.",
       "recommendation_links": "https://source.android.com/docs/security/bulletin/2023-06-01",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Elevate User Privileges#Denial of Service (DoS)#Information Disclosure",
+      "threat_list": "",
       "threats": "The attacker could exploit the vulnerabilities by doing the following:",
       "warning_date": "6 June, 2023",
       "warning_number": "2023-5610"
@@ -3413,7 +3413,7 @@
       "description": "",
       "recommendation_links": "https://www.dell.com/support/kbdoc/en-us/000212575/dsa-2023-147",
       "targeted_sector": "All",
-      "threat_list": "Privilege Escalation#Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "",
       "warning_date": "1 June, 2023",
       "warning_number": "2023-5608"
@@ -3431,7 +3431,7 @@
       "description": "",
       "recommendation_links": "https://www.foxit.com/support/security-bulletins.html",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Use-After-Free",
+      "threat_list": "",
       "threats": "",
       "warning_date": "31 May, 2023",
       "warning_number": "2023-5607"
@@ -3449,7 +3449,7 @@
       "description": "Google has released security updates to address several vulnerabilities in Chrome browser for Windows, Mac and Linux.",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html",
       "targeted_sector": "All",
-      "threat_list": "Out of Bounds Write#Use-After-Free#Out of Bounds Memory Access#Type Confusion",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "31 May, 2023",
       "warning_number": "2023-5606"
@@ -3467,7 +3467,7 @@
       "description": "",
       "recommendation_links": "https://wiki.zimbra.com/wiki/Zimbra_Releases/8.8.15/P40",
       "targeted_sector": "All",
-      "threat_list": "Cross-Site Scripting (XSS)",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "30 May, 2023",
       "warning_number": "2023-5605"
@@ -3503,7 +3503,7 @@
       "description": "  ",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/05/long-term-support-channel-update-for_25.html",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free",
+      "threat_list": "",
       "threats": "  ",
       "warning_date": "26 May, 2023",
       "warning_number": "2023-5603"
@@ -3521,7 +3521,7 @@
       "description": "",
       "recommendation_links": "https://www.dell.com/support/kbdoc/en-us/000214248/dsa-2023-154-powerpath-windows-security-update-for-security-update-for-multiple-vulnerabilities",
       "targeted_sector": "All",
-      "threat_list": "Privilege Escalation#Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "",
       "warning_date": "25 May, 2023",
       "warning_number": "2023-5602"
@@ -3539,7 +3539,7 @@
       "description": "",
       "recommendation_links": "https://support.apple.com/en-us/HT213763",
       "targeted_sector": "All",
-      "threat_list": "Privilege Escalation",
+      "threat_list": "",
       "threats": "",
       "warning_date": "24 May, 2023",
       "warning_number": "2023-5601"
@@ -3557,7 +3557,7 @@
       "description": "",
       "recommendation_links": "https://kb.netgear.com/000065645/Security-Advisory-for-Multiple-Vulnerabilities-on-the-RAX30-PSV-2022-0360-PSV-2022-0361?article=000065645#https://kb.netgear.com/000065649/Security-Advisory-for-Post-authentication-Buffer-Overflow-on-the-RAX30-PSV-2023-0002?article=000065649",
       "targeted_sector": "All",
-      "threat_list": "Buffer Overflow",
+      "threat_list": "",
       "threats": "",
       "warning_date": "24 May, 2023",
       "warning_number": "2023-5600"
@@ -3593,7 +3593,7 @@
       "description": "Apple has released security updates to address multiple vulnerabilities in their product. Apple recommends updating the products to the following versions:",
       "recommendation_links": "https://support.apple.com/en-us/HT213759#https://support.apple.com/en-us/HT213758#https://support.apple.com/en-us/HT213760#https://support.apple.com/en-us/HT213765#https://support.apple.com/en-us/HT213757#https://support.apple.com/en-us/HT213761#https://support.apple.com/en-us/HT213764#https://support.apple.com/en-us/HT213762",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution#Privilege Escalation#Bypass Privacy Preferences#Sensitive Information Disclosure#Improper Authorization#Unauthorized File Modification",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "19 May, 2023",
       "warning_number": "2023-5598"
@@ -3611,7 +3611,7 @@
       "description": "",
       "recommendation_links": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sg-web-multi-S9g4Nkgv",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Denial of Service (DoS)",
+      "threat_list": "",
       "threats": "",
       "warning_date": "18 May, 2023",
       "warning_number": "2023-5597"
@@ -3629,7 +3629,7 @@
       "description": "",
       "recommendation_links": "https://www.jenkins.io/security/advisory/2023-05-16/",
       "targeted_sector": "All",
-      "threat_list": "Stored Cross-site scripting (XSS)#Arbitrary File writes#XML External Entity (XXE) attacks#Session Fixation",
+      "threat_list": "",
       "threats": "",
       "warning_date": "17 May, 2023",
       "warning_number": "2023-5596"
@@ -3647,7 +3647,7 @@
       "description": "",
       "recommendation_links": "https://success.trendmicro.com/dcx/s/solution/000293107?language=en_US#https://success.trendmicro.com/dcx/s/solution/000293108?language=en_US",
       "targeted_sector": "All",
-      "threat_list": "Path Traversal#Privilege Escalation#Improper Access Control#Remote Code Execution",
+      "threat_list": "",
       "threats": "",
       "warning_date": "17 May, 2023",
       "warning_number": "2023-5595"
@@ -3665,7 +3665,7 @@
       "description": "",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_16.html",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free#Heap Corruption",
+      "threat_list": "",
       "threats": "",
       "warning_date": "17 May, 2023",
       "warning_number": "2023-5594"
@@ -3701,7 +3701,7 @@
       "description": "",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/05/long-term-support-channel-update-for.html",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free#Out-Of-Bounds Memory Access",
+      "threat_list": "",
       "threats": "",
       "warning_date": "13 May, 2023",
       "warning_number": "2023-5592"
@@ -3719,7 +3719,7 @@
       "description": "Trend Micro has released a security update to address several vulnerabilities in the following product:",
       "recommendation_links": "https://success.trendmicro.com/dcx/s/solution/000293106?language=en_US",
       "targeted_sector": "All",
-      "threat_list": "Path Traversal#Authentication Bypass",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "12 May, 2023",
       "warning_number": "2023-5591"
@@ -3737,7 +3737,7 @@
       "description": "HP has released security updates to address several vulnerabilities in the following products:",
       "recommendation_links": "https://support.hp.com/us-en/document/ish_8128401-8128440-16/hspbhf03848",
       "targeted_sector": "All",
-      "threat_list": "Buffer Overflow#Elevation of Privilege",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities to achieve the following:",
       "warning_date": "12 May, 2023",
       "warning_number": "2023-5590"
@@ -3755,7 +3755,7 @@
       "description": "",
       "recommendation_links": "https://security.netapp.com/advisory/ntap-20230511-0011/",
       "targeted_sector": "All",
-      "threat_list": "Sensitive Information Disclosure#Denial of Service (DoS)",
+      "threat_list": "",
       "threats": "",
       "warning_date": "11 May, 2023",
       "warning_number": "2023-5589"
@@ -3773,7 +3773,7 @@
       "description": "",
       "recommendation_links": "https://support.mozilla.org/en-US/kb/updating-thunderbird",
       "targeted_sector": "All",
-      "threat_list": "Spoofing Attacks#Denial of Service (DoS)#Memory Corruption#Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "",
       "warning_date": "11 May, 2023",
       "warning_number": "2023-5588"
@@ -3791,7 +3791,7 @@
       "description": "",
       "recommendation_links": "https://support.lenovo.com/us/en/product_security/LEN-103544",
       "targeted_sector": "All",
-      "threat_list": "Elevation of Privilege",
+      "threat_list": "",
       "threats": "",
       "warning_date": "10 May, 2023",
       "warning_number": "2023-5587"
@@ -3809,7 +3809,7 @@
       "description": "",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-chromeos.html",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free#Memory Corruption",
+      "threat_list": "",
       "threats": "",
       "warning_date": "10 May, 2023",
       "warning_number": "2023-5586"
@@ -3827,7 +3827,7 @@
       "description": "",
       "recommendation_links": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00692.html#https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00777.html#https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00778.html#https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00785.html#https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00792.html#https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00798.html#https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00805.html#https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00806.html#https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00807.html#https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00809.html#https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00847.html#https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00839.html#https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00853.html#https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00886.html",
       "targeted_sector": "All",
-      "threat_list": "Escalation of Privilege#Denial of Service (DoS)#Information Disclosure",
+      "threat_list": "",
       "threats": "",
       "warning_date": "10 May, 2023",
       "warning_number": "2023-5585"
@@ -3845,7 +3845,7 @@
       "description": "",
       "recommendation_links": "https://arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt",
       "targeted_sector": "All",
-      "threat_list": "Remote Command Execution#Denial of Service (DoS)#Sensitive Information Disclosure",
+      "threat_list": "",
       "threats": "",
       "warning_date": "10 May, 2023",
       "warning_number": "2023-5584"
@@ -3863,7 +3863,7 @@
       "description": "Microsoft has released security updates to address several vulnerabilities in the following products:",
       "recommendation_links": "https://msrc.microsoft.com/update-guide/releaseNote/2023-May",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Elevate Privileges#Security feature bypass#Denial-of-Service (DoS)",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "9 May, 2023",
       "warning_number": "2023-5583"
@@ -3881,7 +3881,7 @@
       "description": "Adobe has released security update to address several vulnerabilities in the following product:",
       "recommendation_links": "https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "9 May, 2023",
       "warning_number": "2023-5582"
@@ -3899,7 +3899,7 @@
       "description": "SAP has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://accounts.sap.com/saml2/idp/sso",
       "targeted_sector": "All",
-      "threat_list": "Session Hijacking#Improper Authentication#Arbitrary Code Execution#Buffer Overflow#Information Disclosure#Improper Access Control#Privilege Escalation#Memory Corruption#Denial of Service (DoS)#Improper Neutralization",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "9 May, 2023",
       "warning_number": "2023-5581"
@@ -3917,7 +3917,7 @@
       "description": "",
       "recommendation_links": "Update instructions (Firefox):https://support.mozilla.org/en-US/kb/update-firefox-latest-release",
       "targeted_sector": "All",
-      "threat_list": "Spoofing Attacks#Denial of Service (DoS)#Memory Corruption#Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "",
       "warning_date": "9 May, 2023",
       "warning_number": "2023-5580"
@@ -3935,7 +3935,7 @@
       "description": "",
       "recommendation_links": "https://cert-portal.siemens.com/productcert/html/ssa-325383.html#https://cert-portal.siemens.com/productcert/html/ssa-516174.html#https://cert-portal.siemens.com/productcert/html/ssa-555292.html#https://cert-portal.siemens.com/productcert/html/ssa-789345.html#https://cert-portal.siemens.com/productcert/html/ssa-932528.html",
       "targeted_sector": "All",
-      "threat_list": "Command Injection#Heap-based Buffer Overflow#Path Traversal#Improper Input Validation#Deserialization of Untrusted Data",
+      "threat_list": "",
       "threats": "",
       "warning_date": "9 May, 2023",
       "warning_number": "2023-5579"
@@ -3953,7 +3953,7 @@
       "description": "",
       "recommendation_links": "https://access.redhat.com/errata/RHSA-2023:2458",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free#Privilege Escalation#Memory Leak#Denial of Service (DoS)#Memory Corruption",
+      "threat_list": "",
       "threats": "",
       "warning_date": "9 May, 2023",
       "warning_number": "2023-5578"
@@ -3971,7 +3971,7 @@
       "description": "",
       "recommendation_links": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-129-04\u0026p_enDocType=Security+and+Safety+Notice\u0026p_File_Name=SEVD-2023-129-04.pdf\u0026_ga=2.165536191.1606696301.1683620785-943928184.1670928219#https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-129-03\u0026p_enDocType=Security+and+Safety+Notice\u0026p_File_Name=SEVD-2023-129-03.pdf\u0026_ga=2.165536191.1606696301.1683620785-943928184.1670928219#https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-129-02\u0026p_enDocType=Security+and+Safety+Notice\u0026p_File_Name=SEVD-2023-129-02.pdf\u0026_ga=2.165536191.1606696301.1683620785-943928184.1670928219",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Denial of Service (DoS)#Path Traversal#Sensitive Information disclosure#Improper Authorization",
+      "threat_list": "",
       "threats": "",
       "warning_date": "9 May, 2023",
       "warning_number": "2023-5577"
@@ -4007,7 +4007,7 @@
       "description": "Ivanti has released security updates to address several vulnerabilities in the following product:",
       "recommendation_links": "https://forums.ivanti.com/s/article/ZDI-CAN-17729-CVE-2023-28125-Bug-958437-ZDI-CAN-17729-Ivanti-Avalanche-InfoRail-Authentication-Bypass-Vulnerability?language=en_US",
       "targeted_sector": "All",
-      "threat_list": "Authentication Bypass",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "6 May, 2023",
       "warning_number": "2023-5575"
@@ -4025,7 +4025,7 @@
       "description": "IBM has released security updates to address a vulnerability in the following product:",
       "recommendation_links": "",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Privilege Escalation#Information Disclosure",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "5 May, 2023",
       "warning_number": "2023-5574"
@@ -4043,7 +4043,7 @@
       "description": "F5 Networks has released security updates to address several vulnerabilities in the following products:",
       "recommendation_links": "https://my.f5.com/manage/s/article/K000133417#https://my.f5.com/manage/s/article/K20145107#https://my.f5.com/manage/s/article/K000132726#https://my.f5.com/manage/s/article/K000132539#https://my.f5.com/manage/s/article/K000132972#https://my.f5.com/manage/s/article/K000133233",
       "targeted_sector": "All",
-      "threat_list": "Authorization Bypass#Denial of Service (DoS)#Cross-Site Scripting (XSS)#Man-in-the-Middle (MITM)#Remote Command Execution#Privilege Escalation",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "4 May, 2023",
       "warning_number": "2023-5573"
@@ -4061,7 +4061,7 @@
       "description": "Fortinet has released security updates to address a vulnerability in the following products:",
       "recommendation_links": "https://www.fortiguard.com/psirt/FG-IR-22-297#https://www.fortiguard.com/psirt/FG-IR-22-475",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities and perform the following:",
       "warning_date": "4 May, 2023",
       "warning_number": "2023-5572"
@@ -4079,7 +4079,7 @@
       "description": "",
       "recommendation_links": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-spa-unauth-upgrade-UqhyTWW",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution",
+      "threat_list": "",
       "threats": "",
       "warning_date": "4 May, 2023",
       "warning_number": "2023-5571"
@@ -4097,7 +4097,7 @@
       "description": "IBM has released security updates to address several vulnerabilities in the following products:",
       "recommendation_links": "https://www.ibm.com/support/pages/node/6988007#https://www.ibm.com/support/pages/node/6988013#https://www.ibm.com/support/pages/node/6988011",
       "targeted_sector": "All",
-      "threat_list": "Denial of Service (DoS).#Information Disclosure.",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "3 May, 2023",
       "warning_number": "2023-5570"
@@ -4133,7 +4133,7 @@
       "description": "Android has released their monthly security update to address multiple vulnerabilities.",
       "recommendation_links": "https://source.android.com/docs/security/bulletin/2023-05-01",
       "targeted_sector": "All",
-      "threat_list": "Elevate User Privileges#Denial of Service (DoS)#Information Disclosure",
+      "threat_list": "",
       "threats": "An attacker could exploit the vulnerabilities and do the following:",
       "warning_date": "2 May, 2023",
       "warning_number": "2023-5568"
@@ -4151,7 +4151,7 @@
       "description": "",
       "recommendation_links": "https://www.ibm.com/support/pages/node/6987487",
       "targeted_sector": "All",
-      "threat_list": "Server-Side Request Forgery (SSRF).#Denial of Service (DoS).#Elevate Privileges.",
+      "threat_list": "",
       "threats": "",
       "warning_date": "2 May, 2023",
       "warning_number": "2023-5567"
@@ -4169,7 +4169,7 @@
       "description": "",
       "recommendation_links": "https://security.samsungmobile.com/securityUpdate.smsb",
       "targeted_sector": "All",
-      "threat_list": "Improper Access Control#Arbitrary Code Execution#Improper Input Validation",
+      "threat_list": "",
       "threats": "",
       "warning_date": "2 May, 2023",
       "warning_number": "2023-5566"
@@ -4205,7 +4205,7 @@
       "description": "Google has released a security update to address several vulnerabilities in Long-Term Support ChromeOS.",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/04/long-term-support-channel-update-for_27.html",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free vulnerabilities#Out-Of-Bounds Memory Access#Integer Overflow",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "27 April, 2023",
       "warning_number": "2023-5564"
@@ -4259,7 +4259,7 @@
       "description": "Huawei has released security updates to address a vulnerability in the following product:",
       "recommendation_links": "https://www.huawei.com/en/psirt/security-advisories/2023/huawei-sa-sciviahpp-6bcddec5-en#https://www.huawei.com/en/psirt/security-advisories/2023/huawei-sa-moivihp-2f201af9-en#https://www.huawei.com/en/psirt/security-advisories/2023/huawei-sa-moivihp-73cabdde-en",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution#Denial of Service (DoS)",
+      "threat_list": "",
       "threats": "The above vulnerability can be exploited to perform the following:",
       "warning_date": "26 April, 2023",
       "warning_number": "2023-5561"
@@ -4277,7 +4277,7 @@
       "description": "VMware has released security alerts to address several vulnerabilities in the following product:",
       "recommendation_links": "https://www.vmware.com/security/advisories/VMSA-2023-0008.html",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution#Information Disclosure#Privilege Escalation",
+      "threat_list": "",
       "threats": "An attacker could exploit the vulnerabilities to achieve the following:",
       "warning_date": "26 April, 2023",
       "warning_number": "2023-5560"
@@ -4313,7 +4313,7 @@
       "description": "VMware has released security alerts to address several vulnerabilities in the following product:",
       "recommendation_links": "https://www.vmware.com/security/advisories/VMSA-2023-0007.html",
       "targeted_sector": "All",
-      "threat_list": "Unauthenticated Remote Code Execution",
+      "threat_list": "",
       "threats": "An attacker could exploit the vulnerabilities to achieve the following:",
       "warning_date": "20 April, 2023",
       "warning_number": "2023-5558"
@@ -4331,7 +4331,7 @@
       "description": "",
       "recommendation_links": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ind-CAeLFk6V#https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cml-auth-bypass-4fUCCeG5",
       "targeted_sector": "All",
-      "threat_list": "Command Injection#Sensitive Information Disclosure#Authentication Bypass",
+      "threat_list": "",
       "threats": "",
       "warning_date": "19 April, 2023",
       "warning_number": "2023-5557"
@@ -4349,7 +4349,7 @@
       "description": "Foxit has released security update to address several vulnerabilities in the following product:",
       "recommendation_links": "https://www.foxit.com/support/security-bulletins.html",
       "targeted_sector": "All",
-      "threat_list": "Privilege Escalation#Denial of Service (DoS)#Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "19 April, 2023",
       "warning_number": "2023-5556"
@@ -4385,7 +4385,7 @@
       "description": "",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/04/stable-channel-update-for-desktop_18.html#https://chromereleases.googleblog.com/2023/04/chrome-for-android-update_18.html",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free vulnerability#Heap Buffer Overflow#Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "",
       "warning_date": "19 April, 2023",
       "warning_number": "2023-5554"
@@ -4403,7 +4403,7 @@
       "description": "",
       "recommendation_links": "https://www.oracle.com/security-alerts/cpuapr2023.html",
       "targeted_sector": "All",
-      "threat_list": "Authentication bypass#Sensitive information disclosure#Denial of Service (DoS)#Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "",
       "warning_date": "19 April, 2023",
       "warning_number": "2023-5553"
@@ -4421,7 +4421,7 @@
       "description": "",
       "recommendation_links": "https://www.solarwinds.com/trust-center/security-advisories/cve-2022-36963#https://www.solarwinds.com/trust-center/security-advisories/cve-2022-47505",
       "targeted_sector": "All",
-      "threat_list": "Command Injection#Privilege Escalation",
+      "threat_list": "",
       "threats": "",
       "warning_date": "18 April, 2023",
       "warning_number": "2023-5552"
@@ -4439,7 +4439,7 @@
       "description": "Google has released a security update to address several vulnerabilities in Long-Term Support ChromeOS.",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/04/long-term-support-channel-update-for.html",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free vulnerabilities#Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "18 April, 2023",
       "warning_number": "2023-5551"
@@ -4475,7 +4475,7 @@
       "description": "",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/04/stable-channel-update-for-desktop_14.html#https://chromereleases.googleblog.com/2023/04/chrome-for-android-update_02145145008.html",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "",
       "warning_date": "14 April, 2023",
       "warning_number": "2023-5549"
@@ -4493,7 +4493,7 @@
       "description": "",
       "recommendation_links": "https://www.drupal.org/sa-contrib-2023-013",
       "targeted_sector": "All",
-      "threat_list": "Access bypass",
+      "threat_list": "",
       "threats": "",
       "warning_date": "13 April, 2023",
       "warning_number": "2023-5548"
@@ -4511,7 +4511,7 @@
       "description": "Jenkins has released a security update to address vulnerability in the following product:",
       "recommendation_links": "https://www.jenkins.io/security/advisory/2023-04-12/",
       "targeted_sector": "All",
-      "threat_list": "Stored Cross-site scripting (XSS)",
+      "threat_list": "",
       "threats": "Attackers could exploit this vulnerability by doing the following:",
       "warning_date": "13 April, 2023",
       "warning_number": "2023-5547"
@@ -4529,7 +4529,7 @@
       "description": "Juniper has released security alerts to address a vulnerability in the following products:",
       "recommendation_links": "https://supportportal.juniper.net/s/article/2023-04-Security-Bulletin-Junos-OS-Multiple-vulnerabilities-in-expat-resolved?language=en_US#https://supportportal.juniper.net/s/article/2023-04-Security-Bulletin-Paragon-Active-Assurance-Enabling-the-timescaledb-enables-IP-forwarding-CVE-2023-28971?language=en_US#https://supportportal.juniper.net/s/article/2023-04-Security-Bulletin-JSA-Series-Apache-Commons-Text-prior-to-1-10-0-allows-RCE-when-applied-to-untrusted-input-due-to-insecure-interpolation-defaults-CVE-2022-42889?language=en_US#https://supportportal.juniper.net/s/article/2023-04-Security-Bulletin-Junos-OS-Evolved-Shell-Injection-vulnerability-in-the-gNOI-server-CVE-2023-28983?language=en_US#https://supportportal.juniper.net/s/article/2023-04-Security-Bulletin-Junos-OS-Evolved-Local-low-privileged-user-with-shell-access-can-execute-CLI-commands-as-root-CVE-2023-28966?language=en_US#https://supportportal.juniper.net/s/article/2023-04-Security-Bulletin-Junos-OS-and-Junos-OS-Evolved-Malformed-BGP-flowspec-update-causes-RPD-crash-CVE-2023-28964?language=en_US#https://supportportal.juniper.net/s/article/2023-04-Security-Bulletin-Junos-OS-and-Junos-OS-Evolved-An-attacker-sending-genuine-BGP-packets-causes-an-RPD-crash-CVE-2023-28967?language=en_US#https://supportportal.juniper.net/s/article/2023-04-Security-Bulletin-Junos-OS-Evolved-The-sysmanctl-shell-command-allows-a-local-user-to-gain-access-to-some-administrative-actions-CVE-2023-28973?language=en_US#https://supportportal.juniper.net/s/article/2023-04-Security-Bulletin-Junos-OS-Evolved-Docker-repository-is-world-writeable-allowing-low-privileged-local-user-to-inject-files-into-Docker-containers-CVE-2023-28960?language=en_US#https://supportportal.juniper.net/s/article/2023-04-Security-Bulletin-Junos-OS-MX-Series-In-a-BBE-scenario-upon-receipt-of-specific-malformed-packets-from-subscribers-the-process-bbe-smgd-will-crash-CVE-2023-28974?language=en_US#https://supportportal.juniper.net/s/article/2023-04-Security-Bulletin-Junos-OS-MX-Series-If-a-specific-traffic-rate-goes-above-the-DDoS-threshold-it-will-lead-to-an-FPC-crash-CVE-2023-28976?language=en_US#https://supportportal.juniper.net/s/article/2023-04-Security-Bulletin-Junos-OS-and-Junos-OS-Evolved-In-a-BGP-rib-sharding-scenario-when-a-route-is-frequently-updated-an-rpd-memory-leak-will-occur-CVE-2023-28982?language=en_US",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution#Denial of Service (DoS)",
+      "threat_list": "",
       "threats": "An attacker could exploit this vulnerability by doing the following:",
       "warning_date": "12 April, 2023",
       "warning_number": "2023-5546"
@@ -4547,7 +4547,7 @@
       "description": "SAP has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://accounts.sap.com/saml2/idp/sso",
       "targeted_sector": "All",
-      "threat_list": "Improper Access Control#Arbitrary Code Execution#Path Traversal#Information Disclosure",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "12 April, 2023",
       "warning_number": "2023-5545"
@@ -4565,7 +4565,7 @@
       "description": "Fortinet has released security updates to address a vulnerability in the following products:",
       "recommendation_links": "https://www.fortiguard.com/psirt",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution#Privilege Escalation#Unauthorized Access#Cross Site scripting (XSS)",
+      "threat_list": "",
       "threats": "The above vulnerabilities can be exploited to perform the following:",
       "warning_date": "11 April, 2023",
       "warning_number": "2023-5544"
@@ -4583,7 +4583,7 @@
       "description": "Lenovo has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://support.lenovo.com/us/en/product_security/LEN-113714#https://support.lenovo.com/us/en/product_security/LEN-118321",
       "targeted_sector": "All",
-      "threat_list": "Elevate Privileges#Unauthorized Access",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "11 April, 2023",
       "warning_number": "2023-5543"
@@ -4601,7 +4601,7 @@
       "description": "Juniper has released security alerts to address a vulnerability in the following products:",
       "recommendation_links": "https://supportportal.juniper.net/s/article/2023-01-Security-Bulletin-Junos-OS-SRX-Series-and-MX-Series-Memory-leak-due-to-receipt-of-specially-crafted-SIP-calls-CVE-2023-22394",
       "targeted_sector": "All",
-      "threat_list": "Memory Leak#Denial of Service (DoS)",
+      "threat_list": "",
       "threats": "An attacker could exploit this vulnerability by doing the following:",
       "warning_date": "11 April, 2023",
       "warning_number": "2023-5542"
@@ -4619,7 +4619,7 @@
       "description": "Adobe has released security updates to address several vulnerabilities in the following products:",
       "recommendation_links": "https://helpx.adobe.com/security/products/Digital-Editions/apsb23-04.html#https://helpx.adobe.com/security/products/incopy/apsb23-13.html#https://helpx.adobe.com/security/products/acrobat/apsb23-24.html#https://helpx.adobe.com/security/products/substance3d_stager/apsb23-26.html#https://helpx.adobe.com/security/products/dimension/apsb23-27.html#https://helpx.adobe.com/security/products/substance3d_designer/apsb23-28.html",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution#Security feature bypass#Memory Leak",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "11 April, 2023",
       "warning_number": "2023-5541"
@@ -4637,7 +4637,7 @@
       "description": "Microsoft has released security updates to address several vulnerabilities in the following products:",
       "recommendation_links": "https://msrc.microsoft.com/update-guide/releaseNote/2023-Apr",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Elevate Privileges#Security feature bypass#Denial-of-Service (DoS)",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "11 April, 2023",
       "warning_number": "2023-5540"
@@ -4655,7 +4655,7 @@
       "description": "DELL EMC has released a security update to address a vulnerability in the following products:",
       "recommendation_links": "https://www.dell.com/support/kbdoc/en-us/000212242/dsa-2023-137-dell-powerprotect-data-manager-security-update-for-proprietary-code-vulnerability",
       "targeted_sector": "All",
-      "threat_list": "Improper Access Control",
+      "threat_list": "",
       "threats": "The attacker could exploit this vulnerability by doing the following:",
       "warning_date": "11 April, 2023",
       "warning_number": "2023-5539"
@@ -4673,7 +4673,7 @@
       "description": "Mozilla has released security updates to address several vulnerabilities in the following products:",
       "recommendation_links": "Update instructions (Firefox):https://support.mozilla.org/en-US/kb/update-firefox-latest-release",
       "targeted_sector": "All",
-      "threat_list": "Memory Corruption#Arbitrary Code Execution#Spoofing Attacks#Bypass security restriction",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "11 April, 2023",
       "warning_number": "2023-5538"
@@ -4691,7 +4691,7 @@
       "description": "",
       "recommendation_links": "https://cert-portal.siemens.com/productcert/html/ssa-642810.html#https://cert-portal.siemens.com/productcert/html/ssa-629917.html#https://cert-portal.siemens.com/productcert/html/ssa-472454.html#https://cert-portal.siemens.com/productcert/html/ssa-322980.html#https://cert-portal.siemens.com/productcert/html/ssa-116924.html",
       "targeted_sector": "All",
-      "threat_list": "Command Injection#Denial of Service (DoS)#Memory Corruption#Unauthenticated Remote Code Execution#Path Traversal",
+      "threat_list": "",
       "threats": "",
       "warning_date": "11 April, 2023",
       "warning_number": "2023-5537"
@@ -4709,7 +4709,7 @@
       "description": "Schneider Electric has released security update to address several vulnerabilities in the following products:",
       "recommendation_links": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-101-01\u0026p_enDocType=Security+and+Safety+Notice\u0026p_File_Name=SEVD-2023-101-01.pdf\u0026_ga=2.243671429.1006116168.1681204522-9249104.1681204522#https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-101-02\u0026p_enDocType=Security+and+Safety+Notice\u0026p_File_Name=SEVD-2023-101-02.pdf\u0026_ga=2.206374035.1006116168.1681204522-9249104.1681204522#https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-101-03\u0026p_enDocType=Security+and+Safety+Notice\u0026p_File_Name=SEVD-2023-101-03.pdf\u0026_ga=2.206374035.1006116168.1681204522-9249104.1681204522#https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-101-04\u0026p_enDocType=Security+and+Safety+Notice\u0026p_File_Name=SEVD-2023-101-04.pdf\u0026_ga=2.206374035.1006116168.1681204522-9249104.1681204522#https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-101-05\u0026p_enDocType=Security+and+Safety+Notice\u0026p_File_Name=SEVD-2023-101-05.pdf\u0026_ga=2.13034807.1006116168.1681204522-9249104.1681204522",
       "targeted_sector": "All",
-      "threat_list": "Unauthenticated Remote Code Execution#Denial of Service (DoS)#Sensitive Information disclosure#Improper Input Validation",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "11 April, 2023",
       "warning_number": "2023-5536"
@@ -4727,7 +4727,7 @@
       "description": "NETGEAR has released security update to address several vulnerabilities in the following products:",
       "recommendation_links": "https://kb.netgear.com/000065617/Security-Advisory-for-Authentication-Bypass-on-Some-Routers-PSV-2022-0349?article=000065617#https://kb.netgear.com/000065619/Security-Advisory-for-Multiple-Vulnerabilities-on-the-RAX30-PSV-2022-0348?article=000065619",
       "targeted_sector": "All",
-      "threat_list": "Authentication Bypass",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "11 April, 2023",
       "warning_number": "2023-5535"
@@ -4745,7 +4745,7 @@
       "description": "Apple has released security updates to address multiple vulnerabilities in their product Apple recommends updating the products to the following versions:",
       "recommendation_links": "https://support.apple.com/en-us/HT213723#https://support.apple.com/en-us/HT213724#https://support.apple.com/en-us/HT213725",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "10 April, 2023",
       "warning_number": "2023-5534"
@@ -4763,7 +4763,7 @@
       "description": "Hikvision has released security update to address a vulnerability in the following products:",
       "recommendation_links": "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability-in-some-hikvision-hybrid-san-cluster-stor/",
       "targeted_sector": "All",
-      "threat_list": "Improper Access Control",
+      "threat_list": "",
       "threats": "An attacker could exploit this vulnerability by doing the following:",
       "warning_date": "10 April, 2023",
       "warning_number": "2023-5533"
@@ -4799,7 +4799,7 @@
       "description": "npm has released a security update to address a vulnerability in the following product:",
       "recommendation_links": "https://github.com/advisories/GHSA-7jxr-cg7f-gpgv",
       "targeted_sector": "All",
-      "threat_list": "Sandbox Bypass#Arbitrary Remote Code Execution",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "8 April, 2023",
       "warning_number": "2023-5531"
@@ -4817,7 +4817,7 @@
       "description": "Apple has released security updates to address multiple vulnerabilities in their product Apple recommends updating the products to the following versions:",
       "recommendation_links": "https://support.apple.com/en-us/HT213720#https://support.apple.com/en-us/HT213721#https://support.apple.com/en-us/HT213722",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "7 April, 2023",
       "warning_number": "2023-5530"
@@ -4835,7 +4835,7 @@
       "description": "Cisco has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-stealthsmc-rce-sfNBPjcS#https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sb-rv32x-cmdinject-cKQsZpxL#vp#https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-adeos-MLAyEcvk#vp",
       "targeted_sector": "All",
-      "threat_list": "Command Injection#Elevate Privileges#Execute Arbitrary Commands",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "5 April, 2023",
       "warning_number": "2023-5529"
@@ -4853,7 +4853,7 @@
       "description": "Google has released security updates to address multiple vulnerabilities in Chrome browser for Android, Chrome browser for Windows, Mac and Linux.",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/04/stable-channel-update-for-desktop.html#https://chromereleases.googleblog.com/2023/04/chrome-for-android-update.html",
       "targeted_sector": "All",
-      "threat_list": "Use-After-Free vulnerability#Heap Buffer Overflow",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "5 April, 2023",
       "warning_number": "2023-5528"
@@ -4889,7 +4889,7 @@
       "description": "HP has released security alert to address a vulnerability in the following products:",
       "recommendation_links": "https://support.hp.com/us-en/document/ish_7905330-7905358-16/hpsbpi03838",
       "targeted_sector": "All",
-      "threat_list": "Information Disclosure",
+      "threat_list": "",
       "threats": "Attacker could exploit the vulnerability by doing the following:",
       "warning_date": "4 April, 2023",
       "warning_number": "2023-5526"
@@ -4907,7 +4907,7 @@
       "description": "Samsung has released their monthly security update for Samsung devices.",
       "recommendation_links": "https://security.samsungmobile.com/securityUpdate.smsb",
       "targeted_sector": "All",
-      "threat_list": "Improper authorization#Improper authentication#Improper Access Control#Execute Arbitrary Code#Improper Input Validation",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "4 April, 2023",
       "warning_number": "2023-5525"
@@ -4943,7 +4943,7 @@
       "description": "",
       "recommendation_links": "https://source.android.com/docs/security/bulletin/2023-04-01",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Elevate user privileges#Denial of Service (DoS)#Information disclosure",
+      "threat_list": "",
       "threats": "",
       "warning_date": "3 April, 2023",
       "warning_number": "2023-5523"
@@ -4961,7 +4961,7 @@
       "description": "",
       "recommendation_links": "https://access.redhat.com/errata/RHSA-2023:1547#https://access.redhat.com/errata/RHSA-2023:1549",
       "targeted_sector": "All",
-      "threat_list": "Privilege Escalation#HTTP Request Smuggling attack",
+      "threat_list": "",
       "threats": "",
       "warning_date": "3 April, 2023",
       "warning_number": "2023-5522"
@@ -4997,7 +4997,7 @@
       "description": "  Apple has released a security update to address multiple vulnerabilities in Xcode app, Apple recommends updating the product to the following version:",
       "recommendation_links": "https://support.apple.com/en-us/HT213679",
       "targeted_sector": "All",
-      "threat_list": "Sensitive information Disclosure#Execute Arbitrary Code",
+      "threat_list": "",
       "threats": "  An Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "31 March, 2023",
       "warning_number": "2023-5520"
@@ -5015,7 +5015,7 @@
       "description": "DELL EMC has released a security update to address several vulnerabilities in the following product:",
       "recommendation_links": "https://www.dell.com/support/kbdoc/en-us/000211539/dell-emc-powerscale-onefs-security",
       "targeted_sector": "All",
-      "threat_list": "Privilege escalation",
+      "threat_list": "",
       "threats": "The attacker could exploit this vulnerability by doing the following:",
       "warning_date": "30 March, 2023",
       "warning_number": "2023-5519"
@@ -5069,7 +5069,7 @@
       "description": "Apple has released security updates to address multiple vulnerabilities in their product Apple recommends updating the products to the following versions:",
       "recommendation_links": "https://support.apple.com/en-us/HT213676#https://support.apple.com/en-us/HT213673#https://support.apple.com/en-us/HT213670#https://support.apple.com/en-us/HT213677#https://support.apple.com/en-us/HT213675#https://support.apple.com/en-us/HT213674#https://support.apple.com/en-us/HT213678#https://support.apple.com/en-us/HT213671#https://support.apple.com/en-us/HT213672",
       "targeted_sector": "All",
-      "threat_list": "Disclose sensitive user information#Execute arbitrary code with high privilege#Denial-of-service (DoS)#Gain root privileges#Access a user's files or restricted files",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "28 March, 2023",
       "warning_number": "2023-5516"
@@ -5087,7 +5087,7 @@
       "description": "Google has released a security update to address several vulnerabilities in Long-Term Support ChromeOS.",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/03/long-term-support-channel-update-for_24.html",
       "targeted_sector": "All",
-      "threat_list": "Use after free in in Prompts#Heap Buffer Overflow#Arbitrary Code Execution",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "24 March, 2023",
       "warning_number": "2023-5515"
@@ -5123,7 +5123,7 @@
       "description": "Cisco has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-c9300-spi-ace-yejYgnNQ#https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-dnac-privesc-QFXe74RS#https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ewlc-dos-wFujBHKw#https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ios-dhcpv6-dos-44cMvdDK#https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ios-gre-crash-p6nE5Sq5#https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ios-xe-sdwan-VQAhEjYw#https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-iox-priv-escalate-Xg8zkyPk#https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ipv4-vfr-dos-CXxtFacb",
       "targeted_sector": "All",
-      "threat_list": "Command Injection#Denial of Service Attack#Elevate Privileges#Execute Arbitrary Commands",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "23 March, 2023",
       "warning_number": "2023-5513"
@@ -5177,7 +5177,7 @@
       "description": "Google has released security updates to address multiple vulnerabilities in Chrome browser for Android, Chrome browser for Windows, Mac and Linux.",
       "recommendation_links": "https://chromereleases.googleblog.com/2023/03/stable-channel-update-for-desktop_21.html#https://chromereleases.googleblog.com/2023/03/chrome-for-android-update_0229618546.html",
       "targeted_sector": "All",
-      "threat_list": "Executing Arbitrary Code#Out-Of-Bounds Memory Access#Out-Of-Bounds Memory Read",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "22 March, 2023",
       "warning_number": "2023-5510"
@@ -5213,7 +5213,7 @@
       "description": "NETGEAR has released security update to address several vulnerabilities in the following products:",
       "recommendation_links": "https://kb.netgear.com/000065573/Security-Advisory-for-Post-Authentication-Command-Injection-on-Some-WiFi-Systems-PSV-2021-0179?article=000065573#https://kb.netgear.com/000065574/Security-Advisory-for-Post-Authentication-Command-Injection-on-Some-Routers-and-WiFi-Systems-PSV-2021-0182?article=000065574#https://kb.netgear.com/000065576/Security-Advisory-for-Authentication-Bypass-on-Some-Routers-PSV-2021-0264?article=000065576",
       "targeted_sector": "All",
-      "threat_list": "Post-authentication command injection#Authentication Bypass",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "15 March, 2023",
       "warning_number": "2023-5508"
@@ -5231,7 +5231,7 @@
       "description": "",
       "recommendation_links": "https://msrc.microsoft.com/update-guide/releaseNote/2023-Mar",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Gain SYSTEM privileges#Security feature bypass#Steal Net-NTLMv2 hash by sending a specially crafted email to the Outlook client#Denial-of-service (DoS)",
+      "threat_list": "",
       "threats": "",
       "warning_date": "15 March, 2023",
       "warning_number": "2023-5507"
@@ -5249,7 +5249,7 @@
       "description": "",
       "recommendation_links": "https://accounts.sap.com/saml2/idp/sso",
       "targeted_sector": "All",
-      "threat_list": "Command Execution#Arbitrary Code Execution#Directory Traversal#Memory Corruption",
+      "threat_list": "",
       "threats": "",
       "warning_date": "15 March, 2023",
       "warning_number": "2023-5506"
@@ -5267,7 +5267,7 @@
       "description": "",
       "recommendation_links": "https://support.lenovo.com/us/en/product_security/LEN-103545#https://support.lenovo.com/us/en/product_security/LEN-106014#https://support.lenovo.com/us/en/product_security/LEN-99936",
       "targeted_sector": "All",
-      "threat_list": "Execute Arbitrary Code#Information disclosure#Escalation of Privilege#Denial of Service (DoS) Attack#Unauthorized Access",
+      "threat_list": "",
       "threats": "",
       "warning_date": "15 March, 2023",
       "warning_number": "2023-5505"
@@ -5285,7 +5285,7 @@
       "description": "",
       "recommendation_links": "https://helpx.adobe.com/security/products/magento/apsb23-17.html#https://helpx.adobe.com/security/products/experience-manager/apsb23-18.html#https://helpx.adobe.com/security/products/illustrator/apsb23-19.html#https://helpx.adobe.com/security/products/creative-cloud/apsb23-21.html#https://helpx.adobe.com/security/products/substance3d_stager/apsb23-22.html#https://helpx.adobe.com/security/products/photoshop/apsb23-23.html",
       "targeted_sector": "All",
-      "threat_list": "Execute arbitrary code#Arbitrary file read#Cross-Site Scripting attacks (XSS)",
+      "threat_list": "",
       "threats": "",
       "warning_date": "15 March, 2023",
       "warning_number": "2023-5504"
@@ -5303,7 +5303,7 @@
       "description": "Aruba has released security updates to address several vulnerabilities in the following products:",
       "recommendation_links": "",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary User Creation#Privilege Escalation#Sensitive Information Disclosure",
+      "threat_list": "",
       "threats": "Attacker could exploit these vulnerabilities and achieve the following:",
       "warning_date": "15 March, 2023",
       "warning_number": "2023-5503"
@@ -5321,7 +5321,7 @@
       "description": "",
       "recommendation_links": "https://explore.zoom.us/en/trust/security/security-bulletin/",
       "targeted_sector": "All",
-      "threat_list": "Elevate privileges from normal user to root/SYSTEM.#Remote Code Execution.",
+      "threat_list": "",
       "threats": "",
       "warning_date": "15 March, 2023",
       "warning_number": "2023-5502"
@@ -5339,7 +5339,7 @@
       "description": "Mozilla has released security updates to address several vulnerabilities in the following products:",
       "recommendation_links": "Update instructions (Firefox):https://support.mozilla.org/en-US/kb/update-firefox-latest-release",
       "targeted_sector": "All",
-      "threat_list": "Arbitrary Code Execution#Spoofing Attacks#Sensitive Information Disclosure#Bypass security restriction",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities by doing the following:",
       "warning_date": "14 March, 2023",
       "warning_number": "2023-5501"
@@ -5357,7 +5357,7 @@
       "description": "Siemens has released security updates to address multiple vulnerabilities in the following products:",
       "recommendation_links": "https://cert-portal.siemens.com/productcert/html/ssa-851884.html#https://cert-portal.siemens.com/productcert/html/ssa-726834.html#https://cert-portal.siemens.com/productcert/html/ssa-565386.html#https://cert-portal.siemens.com/productcert/html/ssa-419740.html#https://cert-portal.siemens.com/productcert/html/ssa-320629.html#https://cert-portal.siemens.com/productcert/html/ssa-203374.html",
       "targeted_sector": "All",
-      "threat_list": "Authentication bypass#Denial of Service (DoS)#Memory Corruption#Remote code execution#SQL Injection",
+      "threat_list": "",
       "threats": "An attacker could exploit these vulnerabilities and achieve the following:",
       "warning_date": "14 March, 2023",
       "warning_number": "2023-5500"
@@ -5375,7 +5375,7 @@
       "description": "",
       "recommendation_links": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-073-02\u0026p_enDocType=Security+and+Safety+Notice\u0026p_File_Name=SEVD-2023-073-02.pdf\u0026_ga=2.45981476.1852790863.1678782548-7968118.1669104653#https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-073-04\u0026p_enDocType=Security+and+Safety+Notice\u0026p_File_Name=SEVD-2023-073-04.pdf\u0026_ga=2.45981476.1852790863.1678782548-7968118.1669104653",
       "targeted_sector": "All",
-      "threat_list": "Remote Code Execution#Denial of Service (DoS)",
+      "threat_list": "",
       "threats": "",
       "warning_date": "14 March, 2023",
       "warning_number": "2023-5499"
@@ -5393,7 +5393,7 @@
       "description": "Apple has released a security update to address a vulnerability in GarageBand app for the following product:",
       "recommendation_links": "https://support.apple.com/en-us/HT213650",
       "targeted_sector": "All",
-      "threat_list": "Elevate user privileges#Disclose sensitive user information",
+      "threat_list": "",
       "threats": "",
       "warning_date": "9 March, 2023",
       "warning_number": "2023-5498"
