@@ -176,14 +176,21 @@ func processLinkFurther(link string) {
 			}
 			if el.Text == "Threats:" {
 				threats = el.DOM.Next().Children().First().Text()
-				el.DOM.Next().Each(func(i int, s *goquery.Selection) {
-					if s.Is("ul") {
+				if el.DOM.Next().Children().Length() == 2 {
+					el.DOM.Next().Children().Last().Each(func(i int, s *goquery.Selection) {
 						s.Children().Each(func(i int, s *goquery.Selection) {
 							threat := strings.TrimSpace(s.Text())
 							threatList = append(threatList, threat)
 						})
-					}
-				})
+					})
+				} else {
+					el.DOM.Next().Children().Next().Next().Each(func(i int, s *goquery.Selection) {
+						s.Children().Each(func(i int, s *goquery.Selection) {
+							threat := strings.TrimSpace(s.Text())
+							threatList = append(threatList, threat)
+						})
+					})
+				}
 			}
 			if el.Text == "Best practice and Recommendations:" {
 				bestPractice = el.DOM.Next().Children().First().Text()
