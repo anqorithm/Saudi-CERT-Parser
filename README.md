@@ -34,7 +34,7 @@ app.Get("/api/v1/alerts/:id", controllers.GetAlertByID)
 ### Example Response
 
 
-```json
+```bash
 {
     _id: ObjectId('6505ad858e7bdb36a6733c07'),
     severity_level: 'High',
